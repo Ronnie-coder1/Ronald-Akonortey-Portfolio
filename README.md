@@ -3,7 +3,7 @@
 A modern, responsive personal portfolio designed to showcase my expertise in building sleek frontends and secure full-stack applications.
 
 ## 🚀 Live Demo
-**[View Live Portfolio](YOUR_DEPLOYED_URL_HERE)**
+**[View Live Portfolio](https://ronald-akonortey-portfolio.vercel.app/)**
 
 ## 🛠️ Built With
 - **Frontend:** HTML5, CSS3, Tailwind CSS, JavaScript
