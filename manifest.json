@@ -1,0 +1,21 @@
+{
+  "name": "Ronald Akonortey-Frontend-Leaning Full-Stack Developer Portfolio",
+  "short_name": "Ronald Portfolio",
+  "description": "Portfolio of Ronald Akonortey, a full-stack developer specializing in frontend and backend technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "img/Ronald.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "img/Ronald.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
