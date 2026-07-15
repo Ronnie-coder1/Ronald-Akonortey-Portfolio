@@ -636,24 +636,14 @@
       max-width: clamp(190px, 70vw, 290px);
       margin: 0 auto;
     }
-     .about-me img {
-    width: 100%; /* or a comfortable percentage */
-    height: auto;
-  }
-  .hero-section {
-    margin-bottom: 20px; /* adjust as needed */
-  }
-  .about-me {
-    margin-top: 20px;
-  }
-    
-   .header {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  .hero-section {
-    margin-top: 0;
-  }
+     #hero {
+  padding-top: 5.5rem;   /* just enough to clear the fixed nav, no extra gap */
+  padding-bottom: 1.5rem;
+}
+#about {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
     .projects-grid { 
       grid-template-columns: 1fr; 
     }
@@ -686,7 +676,7 @@
     
     section { padding: clamp(2rem, 5vw, 3rem) 1rem; }
     
-    .about-image-wrap { max-width: 150px; }
+.about-image-wrap { max-width: min(75vw, 280px); }
     
     .about-stats { grid-template-columns: 1fr; }
     
