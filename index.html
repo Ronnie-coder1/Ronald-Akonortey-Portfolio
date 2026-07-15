@@ -620,14 +620,17 @@
     nav { padding: 1rem 1.5rem; }
     .about-grid { gap: clamp(2rem, 5vw, 4rem); }
   }
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     nav { padding: 0.875rem 1.25rem; }
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    
-    #hero { padding: clamp(4rem, 8vh, 6rem) clamp(1rem, 4vw, 2rem) clamp(2rem, 6vh, 4rem); }
-    
+
+    #hero {
+      align-items: flex-start;
+      min-height: auto;
+      padding: 5.5rem clamp(1rem, 4vw, 2rem) 1.5rem;
+    }
+
     .about-grid { 
       grid-template-columns: 1fr; 
       gap: clamp(2rem, 4vw, 3rem); 
@@ -636,14 +639,12 @@
       max-width: clamp(190px, 70vw, 290px);
       margin: 0 auto;
     }
-     #hero {
-  padding-top: 5.5rem;   /* just enough to clear the fixed nav, no extra gap */
-  padding-bottom: 1.5rem;
-}
-#about {
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
-}
+
+    #about {
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+    }
+
     .projects-grid { 
       grid-template-columns: 1fr; 
     }
@@ -658,7 +659,7 @@
     
     .hero-scroll { display: none; }
   }
-
+  
   @media (max-width: 480px) {
     nav { padding: 0.75rem 1rem; }
     .nav-logo { font-size: 1.1rem; }
