@@ -366,8 +366,8 @@
     display: block;
   }
   .skill-name {
-    font-family: 'Syne', sans-serif;
-    font-weight: 600;
+    font-family:  sans-serif;
+    font-weight: 550;
     font-size: clamp(0.85rem, 2vw, 1rem);
     margin-bottom: 0.5rem;
     color: var(--text);
@@ -655,7 +655,14 @@
   @media (max-width: 480px) {
     nav { padding: 0.75rem 1rem; }
     .nav-logo { font-size: 1.1rem; }
-    
+     .about-grid { 
+      grid-template-columns: 1fr; 
+      gap: clamp(2rem, 4vw, 3rem); 
+    }
+    .about-image-wrap { 
+      max-width: clamp(190px, 70vw, 290px);
+      margin: 0 auto;
+    }
     #hero { padding: clamp(3.5rem, 6vh, 5rem) 1rem clamp(1.5rem, 4vh, 3rem); }
     
     h1 { font-size: clamp(1.75rem, 6vw, 2.5rem); }
@@ -742,18 +749,18 @@
     <h1>
       <span class="line">Frontend-Leaning Full Stack</span>
       <span class="line accent">Developer</span>
-    
       <span class="line stroke">& Creator</span>
     </h1>
     <p class="hero-desc">I build fast, scalable web experiences — 
       from pixel-perfect interfaces to robust backend systems.</p>
     <div class="hero-actions">
+      <br>
       <a href="#projects" class="btn-primary">View My Work</a>
+      <br>
       <a href="#contact" class="btn-ghost">Let's Talk</a>
     </div>
   </div>
 
-  
 </section>
 
 <!-- About -->
