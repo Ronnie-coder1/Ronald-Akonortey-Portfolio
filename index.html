@@ -34,7 +34,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'DM Sans', sans-serif;
+    font-family:  sans-serif;
     background: var(--light-bg);
     color: var(--text);
     overflow-x: hidden;
@@ -58,7 +58,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   }
   .nav-logo {
-    font-family: 'Syne', sans-serif;
+    font-family:  sans-serif;
     font-weight: 800;
     font-size: clamp(1.2rem, 4vw, 1.5rem);
     color: var(--text);
@@ -125,7 +125,7 @@
   }
   .mobile-menu.open { display: flex; }
   .mobile-menu a {
-    font-family: 'Syne', sans-serif;
+    font-family:  sans-serif;
     font-size: clamp(1.5rem, 8vw, 3rem);
     font-weight: 700;
     color: var(--text);
@@ -185,7 +185,7 @@
     50% { opacity: 0.4; transform: scale(0.8); }
   }
   h1 {
-    font-family: 'Syne', sans-serif;
+    font-family: sans-serif;
     font-size: clamp(2rem, 8vw, 7rem);
     font-weight: 800;
     line-height: 0.95;
@@ -266,18 +266,18 @@
   /* Sections */
   section { padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 3rem); }
   .section-label {
-    font-size: clamp(0.65rem, 2vw, 0.75rem);
-    letter-spacing: 0.15em;
+    font-size: clamp(1.6rem, 2vw, 1.00rem);
+    letter-spacing: 0.10em;
     text-transform: uppercase;
     color: var(--primary);
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 12px;
-    font-weight: 600;
+    font-weight: 500;
   }
   h2 {
-    font-family: 'Syne', sans-serif;
+    font-family:  sans-serif;
     font-size: clamp(1.5rem, 5vw, 3.5rem);
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -323,12 +323,9 @@
     gap: clamp(1rem, 3vw, 1.5rem);
     margin-top: clamp(1.5rem, 3vw, 2.5rem);
   }
-  .stat {
-    border-left: 3px solid var(--primary);
-    padding-left: 1rem;
-  }
+ 
   .stat-num {
-    font-family: 'Syne', sans-serif;
+    font-family: sans-serif;
     font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 700;
     color: var(--primary);
@@ -434,15 +431,7 @@
     flex-direction: column;
   }
   
-  .project-num {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(2rem, 6vw, 3rem);
-    font-weight: 800;
-    color: var(--border);
-    line-height: 1;
-    margin-bottom: 1rem;
-    -webkit-text-stroke: 1px rgba(0,0,0,0.05);
-  }
+  
   .project-title {
     font-family: 'Syne', sans-serif;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
@@ -709,6 +698,8 @@
     h1 { font-size: clamp(1.5rem, 5vw, 2rem); }
     .hero-actions { flex-direction: column; }
     .btn-primary, .btn-ghost { width: 100%; text-align: center; }
+
+   
   }
 
   /* Print styles */
@@ -751,6 +742,7 @@
     <h1>
       <span class="line">Frontend-Leaning Full Stack</span>
       <span class="line accent">Developer</span>
+    
       <span class="line stroke">& Creator</span>
     </h1>
     <p class="hero-desc">I build fast, scalable web experiences — 
@@ -807,53 +799,36 @@
     <div class="section-label fade-up">What I Know</div>
     <h2 class="fade-up">My Toolkit</h2>
     <div class="skills-grid">
+      
       <div class="skill-card fade-up">
-        <span class="skill-icon">⚡</span>
         <div class="skill-name">JavaScript</div>
         <div class="skill-desc">Modern JS, ES6+, async patterns and frameworks</div>
-        <div class="skill-level">
-          <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span>
-        </div>
+        
       </div>
       <div class="skill-card fade-up">
-        <span class="skill-icon">⚛️</span>
         <div class="skill-name">React & Next.js</div>
         <div class="skill-desc">App Router, SSR, RSC, full-stack React apps</div>
-        <div class="skill-level">
-          <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
-        </div>
+        
       </div>
       <div class="skill-card fade-up">
-        <span class="skill-icon">📱</span>
         <div class="skill-name">Dart & Flutter</div>
         <div class="skill-desc">Cross-platform mobile applications</div>
-        <div class="skill-level">
-          <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
-        </div>
+        
       </div>
       <div class="skill-card fade-up">
-        <span class="skill-icon">🐘</span>
         <div class="skill-name">PHP</div>
         <div class="skill-desc">Server-side scripting and REST API development</div>
-        <div class="skill-level">
-          <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
-        </div>
+        
       </div>
       <div class="skill-card fade-up">
-        <span class="skill-icon">🎨</span>
         <div class="skill-name">CSS & HTML</div>
         <div class="skill-desc">Responsive, semantic, accessible web design</div>
-        <div class="skill-level">
-          <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span>
-        </div>
+        
       </div>
       <div class="skill-card fade-up">
-        <span class="skill-icon">🗄️</span>
         <div class="skill-name">SQL & Prisma</div>
         <div class="skill-desc">Database design, queries, ORM workflows</div>
-        <div class="skill-level">
-          <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -868,7 +843,7 @@
       <div class="project-card fade-up">
         <img src="img/project1.png" alt="Full-Stack Web App" class="project-image" loading="lazy">
         <div class="project-content">
-          <div class="project-num">01</div>
+          
           <div class="project-title">Full-Stack Web App</div>
           <p class="project-desc">Developed a type-safe full-stack application leveraging 
             Next.js API Routes and TypeScript to architect robust server-side logic and secure API communications.
@@ -887,7 +862,7 @@
       <div class="project-card fade-up">
         <img src="img/project2.png" alt="Digital Marketing Agency" class="project-image" loading="lazy">
         <div class="project-content">
-          <div class="project-num">02</div>
+        
           <div class="project-title">Digital Marketing Agency</div>
           <p class="project-desc">Architected a mobile-first web application for a digital 
             marketing agency using JavaScript and HTML5. Implemented a custom lead-capture system using Formspree 
@@ -905,7 +880,7 @@
       <div class="project-card fade-up">
         <img src="img/project3.png" alt="E-Commerce Platform" class="project-image" loading="lazy">
         <div class="project-content">
-          <div class="project-num">03</div>
+        
           <div class="project-title">E-Commerce Platform</div>
           <p class="project-desc">Full e-commerce site with authentication, shopping cart, and Paystack payments. 
             Built with Next.js App Router, Prisma for database management, Clerk for authentication, and Zustand for state management.
@@ -916,7 +891,7 @@
             <span class="tag">Prisma</span>
             <span class="tag">Paystack</span>
           </div>
-          <a href="#" class="project-link">Coming Soon</a>
+          <a href="" class="project-link">Coming Soon</a>
         </div>
       </div>
     </div>
@@ -950,6 +925,7 @@
     <span style="font-weight: 600;">Ronald Akonortey</span>. 
     All rights reserved.
   </span>
+  
   <span style="opacity: 0.75;">
     Designed & built by me.
   </span>
