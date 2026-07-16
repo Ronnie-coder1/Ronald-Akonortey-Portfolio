@@ -136,14 +136,16 @@
 
   /* Hero */
   #hero {
-    min-height: 100vh;
+    position: relative;
     display: flex;
     align-items: center;
-    padding: clamp(5rem, 10vh, 8rem) clamp(1.5rem, 5vw, 3rem) clamp(3rem, 8vh, 7rem);
-    position: relative;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 0 clamp(2rem, 8vw, 8rem);
+    padding-top: 80px;
     overflow: hidden;
     background: linear-gradient(135deg, var(--light-bg) 0%, var(--light-bg2) 100%);
-  }
+}
   .hero-bg {
     position: absolute;
     inset: 0;
@@ -157,7 +159,13 @@
                       linear-gradient(90deg, rgba(0,0,0,0.01) 1px, transparent 1px);
     background-size: 60px 60px;
   }
-  .hero-content { position: relative; max-width: 900px; }
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0;
+}
   .hero-tag {
     display: inline-flex;
     align-items: center;
@@ -173,7 +181,13 @@
     background: rgba(16, 185, 129, 0.08);
     border-color: var(--success);
   }
-  
+  .hero-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--success);
+    animation: pulse 2s infinite;
+  }
   @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.4; transform: scale(0.8); }
@@ -186,6 +200,7 @@
     letter-spacing: -0.03em;
     margin-bottom: clamp(1rem, 3vw, 2rem);
     color: var(--text);
+    
   }
   h1 .line { display: block; overflow: hidden; }
   h1 .accent { color: var(--primary); }
@@ -196,12 +211,17 @@
   .hero-desc {
     font-size: clamp(0.95rem, 3vw, 1.1rem);
     color: var(--text-light);
-    max-width: 500px;
+    max-width: 700px;
     line-height: 1.7;
     margin-bottom: clamp(1.5rem, 4vw, 3rem);
     font-weight: 300;
   }
-  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+ .hero-actions{
+    margin-top:2rem;
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
   .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -613,18 +633,36 @@
   @media (max-width: 1024px) {
     nav { padding: 1rem 1.5rem; }
     .about-grid { gap: clamp(2rem, 5vw, 4rem); }
-  }
-@media (max-width: 768px) {
-    nav { padding: 0.875rem 1.25rem; }
-    .nav-links { display: none; }
-    .hamburger { display: flex; }
-
-    #hero {
-      align-items: flex-start;
-      min-height: auto;
-      padding: 5.5rem clamp(1rem, 4vw, 2rem) 1.5rem;
+     .hero-content {
+        max-width: 900px;
+        margin-left: 5vw;
     }
 
+    h1 {
+        font-size: clamp(3.5rem, 6vw, 6rem);
+    }
+
+    .hero-desc {
+        max-width: 600px;
+    }
+  }
+  
+  
+  
+@media (max-width: 768px) {
+    nav { padding: 0.65rem 1.25rem; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+  #hero {
+    min-height: auto;
+    height: auto;
+    padding: 90px 1rem 3rem;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    margin-top: 1rem;
+  }
     .about-grid { 
       grid-template-columns: 1fr; 
       gap: clamp(2rem, 4vw, 3rem); 
@@ -734,7 +772,7 @@
   <a href="#projects" class="mobile-link">Projects</a>
   <a href="#contact" class="mobile-link">Contact</a>
 </div>
-<br>
+
 <!-- Hero -->
 <section id="hero">
   <div class="hero-bg"></div>
@@ -749,9 +787,9 @@
     <p class="hero-desc">I build fast, scalable web experiences — 
       from pixel-perfect interfaces to robust backend systems.</p>
     <div class="hero-actions">
-      <br>
+      
       <a href="#projects" class="btn-primary">View My Work</a>
-      <br>
+      
       <a href="#contact" class="btn-ghost">Let's Talk</a>
     </div>
   </div>
