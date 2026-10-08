@@ -1,0 +1,24 @@
+{
+  "name": "ronald-akonortey-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Personal portfolio of Ronald Akonortey — static site, no build step required.",
+  "scripts": {
+    "dev": "http-server . -p 4173 -a 0.0.0.0 -c-1 --silent",
+    "start": "npm run dev",
+    "check": "npm run check:html && npm run check:format",
+    "check:html": "html-validate index.html",
+    "check:format": "prettier --check .",
+    "format": "prettier --write .",
+    "test": "node tests/smoke.mjs"
+  },
+  "devDependencies": {
+    "html-validate": "^11.16.2",
+    "http-server": "^14.1.1",
+    "jsdom": "^30.1.2",
+    "prettier": "^3.9.9"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
